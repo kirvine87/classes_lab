@@ -24,5 +24,9 @@ class Student
   def student_can_talk()
     return "I can talk!"
   end
-  
+
+  def fav_language()
+    return "I love Ruby"
+  end
+
 end

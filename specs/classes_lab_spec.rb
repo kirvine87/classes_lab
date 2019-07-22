@@ -30,4 +30,8 @@ def test_student_can_talk()
   assert_equal("I can talk!", @person.student_can_talk())
 end
 
+def test_fav_language()
+  assert_equal("I love Ruby", @person.fav_language())
+end
+
 end

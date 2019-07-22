@@ -21,9 +21,9 @@ def test_set_name()
   assert_equal("John", @person.get_name())
 end
 
-# def test_set_cohort()
-#   @account.cohort = "G12"
-#   assert_equal("G12", @account.cohort)
-# end
+def test_set_cohort()
+  @person.set_cohort("G12")
+  assert_equal("G12", @person.get_cohort())
+end
 
 end

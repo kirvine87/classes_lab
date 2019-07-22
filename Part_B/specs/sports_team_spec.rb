@@ -25,4 +25,9 @@ def test_set_coach_name
   assert_equal("Coach C", @team.coach)
 end
 
+def test_add_new_player()
+  @team.add_new_player("Hannah")
+  assert_equal(5, @team.players.count())
+end
+
 end

@@ -8,4 +8,9 @@ def initialize(team_name,players,coach)
   @coach = coach
 end
 
+
+def add_new_player(player)
+  @players << player
+end
+
 end

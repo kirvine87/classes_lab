@@ -26,4 +26,8 @@ def test_set_cohort()
   assert_equal("G12", @person.get_cohort())
 end
 
+def test_student_can_talk()
+  assert_equal("I can talk!", @person.student_can_talk())
+end
+
 end

@@ -6,7 +6,7 @@ class LibraryTest < Minitest::Test
 
   def setup
 
-    @books = [
+    @library = [
       {
         title: "lord_of_the_rings",
         author: "J. R. R. Tolkien",
@@ -33,5 +33,9 @@ class LibraryTest < Minitest::Test
       }
     ]
   end
+
+def test_gets_books()
+  assert_equal(@library, @library.gets_book())
+end
 
 end

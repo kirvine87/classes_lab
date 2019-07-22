@@ -34,7 +34,15 @@ class TestLibrary < MiniTest::Test
 
   def test_get_books()
     assert_equal(3, @library.get_books().count())
-  end
+  end 
 
+def test_get_book_by_title()
+  assert_equal(2, @library.get_book_by_title("to_kill_a_mockingbird").count())
+end
+
+def test_get_rental_details_by_title()
+   rental_details = @library.rental_details_by_title('lord_of_the_rings')
+   assert_equal(2, rental_details.count())
+ end
 
 end
